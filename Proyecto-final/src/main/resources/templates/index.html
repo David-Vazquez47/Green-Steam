@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>COSAS</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" th:href="@{/home}">STEAM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/Juegos}">Juegos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/biblio}">Blibliotecas</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/acceder}">Iniciar sesion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</head>
+<body>
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img th:src="@{/image/nebula.gif}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img th:src="@{/image/cosa2.png}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img th:src="@{/image/cosa2.png}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+<div class="card-columns">
+	<div class="card">
+  		<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid" alt="Card image cap">
+  		<div class="card-block">
+  			<h4 class="title"><a th:href="@{/biblio}">Registrate</a></h4>
+  			<p class="card-text">Registrate para la experiencia completa de STEAM!</p>
+  		</div>
+	</div>
+	<div class="card">
+  		<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid" alt="Card image cap">
+  		<div class="card-block">
+  			<h4 class="title"><a th:href="@{/biblio}">Publica</a></h4>
+    		<p class="card-text">Publica juegos originales</p>
+  		</div>
+	</div>
+	<div class="card">
+  		<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid" alt="Card image cap">
+  		<div class="card-block">
+  			<h4 class="title"><a th:href="@{/biblio}">Compra</a></h4>
+    		<p class="card-text">Compra juegos de otros usuarios</p>
+  		</div>
+	</div>
+</div>
+
+</body>
+</html>

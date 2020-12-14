@@ -12,15 +12,15 @@
 	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" th:href="@{/CSS/style.css}"></link>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="container-fluid navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<div class="container-fluid">
 		<a class="navbar-brand" th:href="@{/home}">STEAM</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-			data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<!-- 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" -->
+<!-- 			data-bs-target="#navbarSupportedContent" -->
+<!-- 			aria-controls="navbarSupportedContent" aria-expanded="false" -->
+<!-- 			aria-label="Toggle navigation"> -->
+<!-- 			<span class="navbar-toggler-icon"></span> -->
+<!-- 		</button> -->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link active"
@@ -33,9 +33,8 @@
 					aria-label="Search">
 				<button class="btn btn-outline-success" type="submit">Search</button>
 			</form>
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item"><a class="nav-link" th:href="@{/acceder}">Iniciar
-						sesion</a></li>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" th:href="@{/acceder}"><img src="/image/nebula3.png"  class="img-fluid" width="25" height="25" alt=""></a></li>
 			</ul>
 		</div>
 	</div>

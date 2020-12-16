@@ -28,4 +28,8 @@ public class IndexController {
 	public String biblioteca() {
 		return "biblioteca";
 	}
+	@GetMapping({"/publi"})
+	public String publicar() {
+		return "publicar";
+	}
 }

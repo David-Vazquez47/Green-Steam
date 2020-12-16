@@ -15,12 +15,12 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 	<div class="container-fluid">
 		<a class="navbar-brand" th:href="@{/home}">STEAM</a>
-<!-- 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" -->
-<!-- 			data-bs-target="#navbarSupportedContent" -->
-<!-- 			aria-controls="navbarSupportedContent" aria-expanded="false" -->
-<!-- 			aria-label="Toggle navigation"> -->
-<!-- 			<span class="navbar-toggler-icon"></span> -->
-<!-- 		</button> -->
+		<!-- 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" -->
+		<!-- 			data-bs-target="#navbarSupportedContent" -->
+		<!-- 			aria-controls="navbarSupportedContent" aria-expanded="false" -->
+		<!-- 			aria-label="Toggle navigation"> -->
+		<!-- 			<span class="navbar-toggler-icon"></span> -->
+		<!-- 		</button> -->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link active"
@@ -34,7 +34,9 @@
 				<button class="btn btn-outline-success" type="submit">Search</button>
 			</form>
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" th:href="@{/acceder}"><img src="/image/nebula3.png"  class="img-fluid" width="25" height="25" alt=""></a></li>
+				<li class="nav-item"><a class="nav-link" th:href="@{/acceder}"><img
+						src="/image/nebula3.png" class="img-fluid" width="25" height="25"
+						alt=""></a></li>
 			</ul>
 		</div>
 	</div>
@@ -51,14 +53,15 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img th:src="@{/image/cosa2.png}" class="d-block w-100" alt="...">
+				<img th:src="@{/image/portada 1.jpeg}" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
+<<<<<<< HEAD
 					<h5>First slide label</h5>
 					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img th:src="@{/image/cosa2.png}" class="d-block w-100" alt="...">
+				<img th:src="@{/image/portada 2jpeg}" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>Second slide label</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -70,22 +73,19 @@
 					<h5>Third slide label</h5>
 					<p>Praesent commodo cursus magna, vel scelerisque nisl
 						consectetur.</p>
+=======
+					<h5>¡OFERTAS!</h5>
+					<p>Aprovecha las ofertas de la semana.</p>
+>>>>>>> 4c3935e4351c241352606ee81c08b79cf778bd36
 				</div>
 			</div>
 		</div>
-		<a class="carousel-control-prev" href="#MyCarousel" role="button"
-			data-bs-slide="prev"> <span class="carousel-control-prev-icon"
-			aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
-		</a> <a class="carousel-control-next" href="#MyCarousel" role="button"
-			data-bs-slide="next"> <span class="carousel-control-next-icon"
-			aria-hidden="true"></span> <span class="visually-hidden">Next</span>
-		</a>
-	</div>
 
 
+<<<<<<< HEAD
 	<div class="card-columns">
 		<div class="card">
-			<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid"
+			<img th:src="@{/image/registrarse.png}" class="card-img-top img-fluid"
 				alt="Card image cap">
 			<div class="card-block">
 				<h4 class="title">
@@ -93,29 +93,52 @@
 				</h4>
 				<p class="card-text">Registrate para la experiencia completa de
 					STEAM!</p>
+=======
+		<div class="card-columns">
+			<div class="card">
+				<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid"
+					alt="Card image cap">
+				<div class="card-block">
+					<h4 class="title">
+						<a th:href="@{/registro}">Registrate</a>
+					</h4>
+					<p class="card-text">Registrate para la experiencia completa de
+						STEAM!</p>
+				</div>
+>>>>>>> 4c3935e4351c241352606ee81c08b79cf778bd36
 			</div>
+			<div class="card">
+				<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid"
+					alt="Card image cap">
+				<div class="card-block">
+					<h4 class="title">
+						<a th:href="@{/biblio}">Publica</a>
+					</h4>
+					<p class="card-text">Publica juegos originales</p>
+				</div>
+			</div>
+<<<<<<< HEAD
 		</div>
 		<div class="card">
-			<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid"
-				alt="Card image cap">
-			<div class="card-block">
-				<h4 class="title">
-					<a th:href="@{/biblio}">Publica</a>
-				</h4>
-				<p class="card-text">Publica juegos originales</p>
-			</div>
-		</div>
-		<div class="card">
-			<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid"
+			<img th:src="@{/image/portada 2.jpeg}" class="card-img-top img-fluid"
 				alt="Card image cap">
 			<div class="card-block">
 				<h4 class="title">
 					<a th:href="@{/biblio}">Compra</a>
 				</h4>
 				<p class="card-text">Compra juegos de otros usuarios</p>
+=======
+			<div class="card">
+				<img th:src="@{/image/cosa2.png}" class="card-img-top img-fluid"
+					alt="Card image cap">
+				<div class="card-block">
+					<h4 class="title">
+						<a th:href="@{/biblio}">Compra</a>
+					</h4>
+					<p class="card-text">Compra juegos de otros usuarios</p>
+				</div>
+>>>>>>> 4c3935e4351c241352606ee81c08b79cf778bd36
 			</div>
 		</div>
-	</div>
-
 </body>
 </html>
